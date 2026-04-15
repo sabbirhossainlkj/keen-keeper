@@ -11,6 +11,7 @@ import NotFound from "./pages/notfoundpage/NotFound";
 import NotFoundPage from "./pages/notfoundpage/NotFound";
 import FriendsDetails from "./pages/friendsdetails/FriendsDetails";
 import FriendProvider from "./context/FriendContex";
+import { ToastContainer } from "react-toastify";
 
 const router = createBrowserRouter([
   {
@@ -43,6 +44,7 @@ createRoot(document.getElementById("root")).render(
   <StrictMode>
     <FriendProvider>
     <RouterProvider router={router} />
+    <ToastContainer />
     </FriendProvider>
   </StrictMode>,
 );

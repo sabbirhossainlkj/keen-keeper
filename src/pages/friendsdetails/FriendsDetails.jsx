@@ -18,8 +18,8 @@ const FriendsDetails = () => {
     return "bg-blue-200 text-blue-800";
   };
 
-     const {handleCall, call} = useContext(FriendContext)
-     console.log(handleCall, call, 'friend data')
+     const {handleCall, handleText,handleVideo} = useContext(FriendContext)
+    //  console.log(handleCall, call, 'friend data')
 
  
 
@@ -75,9 +75,9 @@ const FriendsDetails = () => {
             📞 Call
           </button>
 
-          <button className="btn">💬 Text</button>
+          <button onClick={() => handleText(expectedFriend)} className="btn">💬 Text</button>
 
-          <button className="btn">🎥 Video</button>
+          <button onClick={() => handleVideo(expectedFriend)} className="btn">🎥 Video</button>
         </div>
       </div>
     </div>
