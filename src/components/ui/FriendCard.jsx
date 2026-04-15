@@ -15,7 +15,7 @@ const FriendCard = ({ friend, getStatusColor }) => {
 
             <h3 className="text-xl font-bold">{friend.name}</h3>
             <p className="text-gray-400">{friend.days_since_contact}d ago</p>
-            <p className="bg-emerald-200 rounded-3xl">{friend.tags}</p>
+            <p className="bg-taupe-600 text-white font-bold rounded-3xl">{friend.tags}</p>
             <p
               className={`px-3 py-1 mt-3 rounded-full inline-block ${getStatusColor(friend.status)}`}
             >
