@@ -9,6 +9,8 @@ import Timeline from "./pages/timeline/Timeline";
 import Stats from "./pages/status/Stats";
 import NotFound from "./pages/notfoundpage/NotFound";
 import NotFoundPage from "./pages/notfoundpage/NotFound";
+import FriendsDetails from "./pages/friendsdetails/FriendsDetails";
+import FriendProvider from "./context/FriendContex";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +26,11 @@ const router = createBrowserRouter([
         Component: Timeline
       },
       {
+         path: '/friendsDetails/:id',
+         loader: () => fetch("/friends.json"),
+         Component: FriendsDetails,
+      },
+      {
         path: "/stats",
         Component: Stats,
       }
@@ -34,6 +41,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
+    <FriendProvider>
     <RouterProvider router={router} />
+    </FriendProvider>
   </StrictMode>,
 );

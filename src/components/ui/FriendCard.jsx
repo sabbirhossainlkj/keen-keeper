@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 const FriendCard = ({ friend, getStatusColor }) => {
     return (
-        <div
+        <Link to={`/friendsDetails/${friend.id}`}
             className="border border-gray-300 p-5 text-center rounded-2xl shadow-2xl"
           >
             <img
@@ -20,7 +21,7 @@ const FriendCard = ({ friend, getStatusColor }) => {
             >
               {friend.status}
             </p>
-          </div>
+          </Link>
     );
 };
 
