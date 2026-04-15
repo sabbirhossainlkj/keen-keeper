@@ -1,16 +1,84 @@
-# React + Vite
+# 📘 KeenKeeper - Friend Relationship Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+KeenKeeper is a modern React-based web application that helps users manage and nurture meaningful relationships. It allows users to track interactions like calls, texts, and video chats with friends, ensuring no connection is forgotten.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+* 📇 View all friends in a clean grid layout
+* 📊 Track relationship status (Overdue, Almost Due, On-Track)
+* 📞 Call, 💬 Text, 🎥 Video interaction tracking
+* ⏳ Timeline view with tab-based navigation
+* 🔔 Toast notifications for actions
+* 🧠 Context API for global state management
+* 🎨 Responsive UI using Tailwind CSS
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* React.js
+* React Router
+* Context API
+* Tailwind CSS
+* React Tabs
+* React Toastify
+
+
+## ⚙️ Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/your-username/keenkeeper.git
+
+# Navigate to project folder
+cd keenkeeper
+
+# Install dependencies
+npm install
+
+# Run the project
+npm run dev
+```
+
+---
+
+## 📸 Screenshots
+
+* Friend List Page
+* Friend Details Page
+* Timeline (Call/Text/Video Tabs)
+
+---
+
+## 💡 Key Concepts Used
+
+* React Hooks (`useState`, `useContext`, `useParams`, `useLoaderData`)
+* Conditional Styling
+* Component Reusability
+* State Management with Context API
+
+---
+
+## 🔥 Future Improvements
+
+* Add authentication system
+* Store data in database (Firebase / MongoDB)
+* Add reminder notifications
+* Improve UI animations
+
+---
+
+## 🙌 Author
+
+**Sabbir Hossain**
+Frontend Developer (React Learner 🚀)
+
+---
+
+## ⭐ Support
+
+If you like this project, give it a ⭐ on GitHub!
+
+---
