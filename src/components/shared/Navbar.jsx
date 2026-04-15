@@ -12,17 +12,17 @@ const Navbar = () => {
                 <li className='flex-1'><NavLink className={({ isActive }) =>
               isActive
                 ?  'bg-[#244D3F] flex btn text-white font-bold'
-                : ""
+                : "flex btn font-bold"
             } to="/"><CiHome />Home</NavLink></li>
                 <li><NavLink className={({ isActive }) =>
               isActive
                 ?  'bg-[#244D3F] btn  text-white font-bold'
-                : ""
+                : "flex btn font-bold"
             } to="/timeline"><IoTimeOutline />Timeline</NavLink></li>
                 <li><NavLink className={({ isActive }) =>
               isActive
                 ?  'bg-[#244D3F] btn text-white font-bold'
-                : ""
+                : "flex btn font-bold"
             } to="/stats"><ImStatsDots />Stats</NavLink></li>
             </ul>
         </div>

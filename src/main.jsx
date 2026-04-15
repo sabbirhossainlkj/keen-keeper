@@ -44,7 +44,7 @@ createRoot(document.getElementById("root")).render(
   <StrictMode>
     <FriendProvider>
     <RouterProvider router={router} />
-    <ToastContainer />
+    <ToastContainer position="top-center" />
     </FriendProvider>
   </StrictMode>,
 );
