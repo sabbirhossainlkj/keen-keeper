@@ -41,7 +41,7 @@ const FriendsDetails = () => {
         <div className="flex flex-col space-y-2 ">
           <button className="btn shadow-2xl">⏰ Snooze 2 Weeks</button>
           <button className="btn shadow-2xl">📦 Archive</button>
-          <button className="btn shadow-2xl">🗑️ Delete</button>
+          <button className="btn shadow-2xl text-red-500">🗑️ Delete</button>
         </div>
       </div>
       <div className=" space-y-6">

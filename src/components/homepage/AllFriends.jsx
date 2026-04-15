@@ -1,5 +1,6 @@
 import React, { use } from 'react';
 import FriendCard from '../ui/FriendCard';
+import { GridLoader } from 'react-spinners';
 
 const allFriendsPromise = fetch("/friends.json").then((res) => res.json());
 
@@ -13,6 +14,14 @@ const AllFriends = () => {
     if (status === "on-track") return "bg-[#244D3F] text-white";
     return "bg-blue-200 text-blue-800";
   };
+
+  if (!friends) {
+    return (
+      <div className="flex justify-center items-center h-screen">
+        <GridLoader />
+      </div>
+    );
+  }
     return (
         <div className='w-10/12 mx-auto my-10'>
             <h2 className='text-2xl font-bold'>Your Friends</h2>
