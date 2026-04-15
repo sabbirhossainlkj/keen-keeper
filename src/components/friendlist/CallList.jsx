@@ -9,7 +9,7 @@ const CallList = () => {
 
     if(call.length === 0){
     return <div className='flex justify-center items-center text-center bg-gray-200 h-[50vh]'>
-        <h2 className='font-bold text-2xl text-red-500'>no found Call data available</h2>
+        <h2 className='font-bold text-2xl text-red-500'>No found Call data available</h2>
     </div>
   }
 

@@ -11,7 +11,7 @@ const VideoList = () => {
     return (
       <div className="flex justify-center items-center text-center bg-gray-200 h-[50vh]">
         <h2 className="font-bold text-2xl text-red-500">
-          no found video data available
+          No found video data available
         </h2>
       </div>
     );
