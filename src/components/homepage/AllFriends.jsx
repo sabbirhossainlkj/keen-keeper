@@ -25,7 +25,7 @@ const AllFriends = () => {
     return (
         <div className='w-10/12 mx-auto my-10'>
             <h2 className='text-2xl font-bold'>Your Friends</h2>
-            <div className="grid grid-cols-4 gap-3">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
             {
                 friends.map(friend => {
                     return <FriendCard key={friend.id} friend={friend} getStatusColor={getStatusColor}></FriendCard>

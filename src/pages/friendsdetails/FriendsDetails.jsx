@@ -24,7 +24,7 @@ const FriendsDetails = () => {
  
 
   return (
-    <div className=" border-gray-400 my-7 w-10/12 mx-auto grid grid-cols-2 gap-3">
+    <div className=" border-gray-400 my-7 w-10/12 mx-auto grid grid-cols-1 md:grid-cols-2 gap-3">
       <div className="space-y-3">
         <div className=" text-center p-7 rounded-2xl shadow-2xl bg-gray-100 space-y-2">
           <img className=" rounded-full mx-auto" src={picture} alt={name} />

@@ -10,7 +10,7 @@ const Banner = () => {
         the relationships that matter most.
       </p>
       <button className="btn bg-[#244D3F] text-white font-bold"><FaPlus />Add a Friend</button>
-      <div className="flex justify-between items-center">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-between items-center">
         <div className=" p-5 shadow-2xl bg-gray-100 rounded-2xl">
             <h2 className="text-[#244D3F] font-bold text-xl">8</h2>
             <p className="text-gray-400">Total Friends</p>

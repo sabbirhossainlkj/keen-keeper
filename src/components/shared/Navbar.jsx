@@ -6,9 +6,9 @@ import { Link, NavLink } from 'react-router';
 
 const Navbar = () => {
     return (
-        <div className='flex justify-between border border-gray-300 p-5 rounded-2xl shadow-2xl'>
+        <div className='flex justify-between  border border-gray-300 p-5 rounded-2xl shadow-2xl'>
             <a className="btn btn-ghost text-xl font-bold">Keen<span className="text-[#244D3F] font-bold">Keeper</span></a>
-            <ul className='flex gap-8 items-center'>
+            <ul className='flex gap-3  lg:gap-8 items-center'>
                 <li className='flex-1'><NavLink className={({ isActive }) =>
               isActive
                 ?  'bg-[#244D3F] flex btn text-white font-bold'
